@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 export default function Home(props) {
  
   return (
-    <div className={darkmode && "dark"}>
+  
       <div className="bg-white-100">
         <Head>
           <title>Amazon Clone</title>
@@ -19,7 +19,6 @@ export default function Home(props) {
           <ProductFeed products={props.products} />
         </main>
       </div>
-    </div>
   );
 }
 export async function getServerSideProps(context) {

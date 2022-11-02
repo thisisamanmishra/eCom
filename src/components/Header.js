@@ -13,7 +13,6 @@ import { useSelector, useDispatch } from "react-redux";
 function Header() {
   const [animationStarted, setAimationStarted] = useState(false);
   const dispatch = useDispatch();
-  const mode = useSelector((state) => state.darkMode.onDarkMode);
   const router = useRouter();
   const items = useSelector(selectTotalItems);
   const { data: session, status } = useSession();
@@ -104,8 +103,6 @@ function Header() {
         <p className="links hidden lg:inline-flex">Today's Deal</p>
         <p className="links hidden lg:inline-flex">Electronics</p>
         <p className="links hidden lg:inline-flex">Food and Grocery</p>
-        <p className="links hidden lg:inline-flex">Prime</p>
-        <p className="links hidden lg:inline-flex">Shopper Toolkit</p>
         <p className="links hidden lg:inline-flex">Health</p>
       </div>
     </header>
